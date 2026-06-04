@@ -284,10 +284,13 @@
   </section>
   
   <footer>
-    © 2026 Sherif Shehab • Automation Specialist • Built with ❤️
+    © <span id="current-year"></span> Sherif Shehab • Automation Specialist • Built with ❤️
   </footer>
   
   <script>
+    // Dynamic Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
     // Theme Toggle
     function toggleTheme() {
       const html = document.documentElement;
