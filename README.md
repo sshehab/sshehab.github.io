@@ -22,6 +22,6 @@ Visit: https://sshehab.github.io
 Simply open `index.html` in a browser to preview.
 
 ## Contact
-- Email: [your@email.com]
+- Email: [s.freelancer3681@gmail.com]
 - Telegram: @[your_handle]
 - WhatsApp: [+1 (XXX) XXX-XXXX]
