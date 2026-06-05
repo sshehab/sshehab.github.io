@@ -37,8 +37,8 @@
     .hero{min-height:100vh;display:flex;align-items:center;padding:5rem 5% 3rem;position:relative;z-index:1}
     .hero-inner{display:grid;grid-template-columns:1fr 320px;gap:4rem;align-items:center;max-width:1100px;width:100%;margin:0 auto}
     .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(59,130,246,.1);border:1px solid var(--border);border-radius:6px;padding:.4rem 1rem;font-size:.78rem;color:var(--accent2);margin-bottom:1.5rem;animation:fadeUp .6s ease both}
-    .dot{width:6px;height:6px;background:var(--accent3);border-radius:50%;animation:pulse 2s infinite}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+    .dot{width:8px;height:8px;background:#22c55e;border-radius:50%;animation:blink 1s ease-in-out infinite}
+    @keyframes blink{0%,100%{opacity:1;box-shadow:0 0 6px #22c55e}50%{opacity:0.2;box-shadow:none}}
     h1.hero-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(3rem,7vw,5rem);font-weight:700;line-height:1.1;letter-spacing:-2px;margin-bottom:.6rem;animation:fadeUp .7s .1s ease both;background:linear-gradient(135deg,var(--text) 40%,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .hero-handle{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;color:var(--accent);letter-spacing:2px;margin-bottom:1rem;animation:fadeUp .7s .15s ease both}
     .hero-sub{font-size:1rem;color:var(--accent3);font-weight:500;margin-bottom:1.2rem;animation:fadeUp .7s .2s ease both}
@@ -156,8 +156,8 @@
       </div>
       <div class="photo-wrap">
         <div style="width:280px;height:280px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent3));padding:4px;position:relative">
-          <div style="width:100%;height:100%;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:4rem">
-            👨‍💻
+          <div style="width:100%;height:100%;border-radius:50%;background:var(--surface2);overflow:hidden">
+            <img src="images/1755816085.png" alt="Sherif Shehab" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
           </div>
         </div>
       </div>
