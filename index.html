@@ -416,7 +416,7 @@
       <div class="contact-links">
         <a href="mailto:s.freelancer3681@gmail.com" class="btn btn-primary">📧 Email Me</a>
         <a href="https://t.me/sherif3681" class="btn btn-outline">✈️ Telegram</a>
-        <a href="https://wa.me/16473676452" id="wa-link" class="btn btn-outline" onclick="waFallback(event)">💬 WhatsApp</a>
+        <a href="https://api.whatsapp.com/send/?text&username=sgemini3&type=username&app_absent=0" id="wa-link" class="btn btn-outline">💬 WhatsApp</a>
       </div>
     </div>
   </section>
@@ -457,19 +457,20 @@
     
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // WhatsApp: try username link first; if the username feature isn't
-    // available on the visitor's app, fall back to the phone-number link.
-    function waFallback(e) {
-      e.preventDefault();
-      const waLink = document.getElementById('wa-link');
-      const url = waLink.href;
-      window.location.href = url;
-      setTimeout(function () {
-        if (!document.hidden && document.visibilityState !== 'hidden') {
-          window.location.href = 'https://wa.me/16473676452';
-        }
-      }, 2000);
-    }
+    // WhatsApp: username link.
+    // Phone-number fallback DISABLED until WhatsApp activates username chat
+    // (currently rolling out in waves). Uncomment when the link resolves.
+    // function waFallback(e) {
+    //   e.preventDefault();
+    //   const waLink = document.getElementById('wa-link');
+    //   const url = waLink.href;
+    //   window.location.href = url;
+    //   setTimeout(function () {
+    //     if (!document.hidden && document.visibilityState !== 'hidden') {
+    //       window.location.href = 'https://wa.me/16473676452';
+    //     }
+    //   }, 2000);
+    // }
   </script>
 </body>
 </html>
